@@ -17,10 +17,12 @@ html{
 #navbar{
     display: flex;
     align-items: center;
-    position: sticky;
-    top: 0px;
+    position: sticky;    
 }
 
+.item{
+    margin-left:20px;
+}
 #navbar::before{
     content: "";
     background-color: black;
@@ -34,22 +36,85 @@ html{
 }
 
 /* Navigation Bar: Logo and Image */
-#logo{
-    margin: 10px 34px;
+.Mainlogo{
+    font-size:30px;
+    font-weight:Bolder;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode';
+    font-style: bold;
     /* comment */
 }
+      .container{
+        min-height: 100vh;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        text-align: center;
+        position: relative;
+        top:-340px; 
+        left:360px;
+        cursor: pointer;
+        border: 0;
+        border-radius: 4px;
+        font-weight: 600;
+        margin: 0 10px;
+        width: 100px;
+        padding: 10px 0;
+        box-shadow: 0 0 20px rgba(104, 85, 224, 0.2);
+        transition:0.3s;
+        height:20px;
+      }
+      
+      #reg {
+        color: white;
+        background-color: rgba(104, 85, 224, 1);
+      }
+      
+      #log {
+        color: rgb(104, 85, 224);
+        background-color: rgba(255, 255, 255, 1);
+        border: 1px solid rgba(104, 85, 224, 1);
+      }
+      
+      .container:hover {
+        color: white;
+        width: 20px;;
+        box-shadow: 0 0 20px rgba(104, 85, 224, 0.6);
+        background-color: rgba(104, 85, 224, 1);
+      }
+      
+      
 
-#logo img{
-    height: 100px;
-    margin: 3px 6px;
+.glow{
+    font-size: 20px;
+    color: #fff;
+    text-align: center;
+    animation: glow 1s ease-in-out infinite alternate;
 }
+
+@-webkit-keyframes glow {
+    from {
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073,
+       0 0 60px #e60073, 0 0 70px #e60073;
+    }
+    
+    to {
+      text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6,
+       0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+    }
+  }
+
+/* #logo img{ */
+    /* height: 100px; */
+    /* margin: 3px 6px; */
+/* } */
 
 
 /* Navigation Bar: List Styling */
 
 #navbar ul{
     display: flex;
-    font-family: 'Baloo Bhai', cursive;
+    font-family: 'Shooman', cursive;
+    
 }
 
 #navbar ul li{ 
